@@ -29,13 +29,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/poeck/uniquer.git"
+    "url": "git+https://github.com/simplifylabs/uniquer.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/poeck/uniquer/issues"
+    "url": "https://github.com/simplifylabs/uniquer/issues"
   },
-  "homepage": "https://github.com/poeck/uniquer#readme",
+  "homepage": "https://github.com/simplifylabs/uniquer#readme",
   "devDependencies": {
     "@types/jest": "^28.1.6",
     "@types/node": "^18.0.6",
