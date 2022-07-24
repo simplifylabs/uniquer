@@ -25,9 +25,9 @@ yarn add uniquer
 Synchronously
 
 ```js
-import Uniquer from 'uniquer';
+import Uniquer from "uniquer";
 
-const fileName = Uniquer.writeSync('./output/', '.txt', 'Hello, world!');
+const fileName = Uniquer.writeSync("./output/", ".txt", "Hello, world!");
 
 // ./output/315f5bdb...5894edd3.txt
 console.log(fileName);
@@ -36,9 +36,9 @@ console.log(fileName);
 Asynchronously
 
 ```js
-import Uniquer from 'uniquer';
+import Uniquer from "uniquer";
 
-const fileName = await Uniquer.write('./output/', '.txt', 'Hello, world!');
+const fileName = await Uniquer.write("./output/", ".txt", "Hello, world!");
 
 // ./output/315f5bdb...5894edd3.txt
 console.log(fileName);
@@ -106,9 +106,11 @@ will result in the same file name.
 | [`options`] | `String \| WriteFileOptions` | Encoding or WriteFileOptions |
 | _returns_   | `String`                     | File name of created file    |
 
+Example
+
 ```javascript
-import Uniquer from 'uniquer';
-const fileName = Uniquer.writeSync('./output/', '.txt', 'Hello, world!');
+import Uniquer from "uniquer";
+const fileName = Uniquer.writeSync("./output/", ".txt", "Hello, world!");
 ```
 
 <br />
@@ -127,9 +129,11 @@ will result in the same file name.
 | [`options`] | `String \| WriteFileOptions` | Encoding or WriteFileOptions |
 | _returns_   | `Promise<String>`            | File name of created file    |
 
+Example
+
 ```javascript
-import Uniquer from 'uniquer';
-const fileName = await Uniquer.write('./output/', '.txt', 'Hello, world!');
+import Uniquer from "uniquer";
+const fileName = await Uniquer.write("./output/", ".txt", "Hello, world!");
 ```
 
 <br />
@@ -144,9 +148,11 @@ Resolve the unique file path, based on the file hash + extension.
 | `data`      | `String \| ArrayBufferView` | The file's data    |
 | _returns_   | `String`                    | Resolved file name |
 
+Example
+
 ```javascript
-import Uniquer from 'uniquer';
-const fileName = Uniquer.getFileName('.txt', 'Hello, world!');
+import Uniquer from "uniquer";
+const fileName = Uniquer.getFileName(".txt", "Hello, world!");
 ```
 
 <br />
@@ -162,9 +168,11 @@ Resolve the unique file path, based on the file hash + extension.
 | `data`      | `String \| ArrayBufferView` | The file's data              |
 | _returns_   | `String`                    | Resolved file path           |
 
+Example
+
 ```javascript
-import Uniquer from 'uniquer';
-const filePath = Uniquer.getFilePath('./output/', '.txt', 'Hello, world!');
+import Uniquer from "uniquer";
+const filePath = Uniquer.getFilePath("./output/", ".txt", "Hello, world!");
 ```
 
 <br />
@@ -178,7 +186,9 @@ Get the SHA256 hash of the data, converted to hex format.
 | `data`    | `String \| ArrayBufferView` | The file's data  |
 | _returns_ | `String`                    | SHA256 file hash |
 
+Example
+
 ```javascript
-import Uniquer from 'uniquer';
-const hash = Uniquer.getFileHash('Hello, world!');
+import Uniquer from "uniquer";
+const hash = Uniquer.getFileHash("Hello, world!");
 ```
