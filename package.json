@@ -1,6 +1,6 @@
 {
   "name": "uniquer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Save equal files only once, avoid duplicatesSave equal files only once, avoid duplicates.",
   "keywords": [
     "unique",
