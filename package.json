@@ -9,10 +9,10 @@
     "hash"
   ],
   "author": "Paul Koeck",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
   "files": [
-    "lib/**/*"
+    "out/**/*"
   ],
   "scripts": {
     "build": "tsc",
@@ -23,7 +23,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lin",
+    "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
