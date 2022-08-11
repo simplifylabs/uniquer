@@ -29,7 +29,7 @@ import Uniquer from 'uniquer';
 
 const fileName = Uniquer.writeSync('./output/', '.txt', 'Hello, world!');
 
-// ./output/315f5bdb...5894edd3.txt
+// 315f5bdb...5894edd3.txt
 console.log(fileName);
 ```
 
@@ -40,7 +40,7 @@ import Uniquer from 'uniquer';
 
 const fileName = await Uniquer.write('./output/', '.txt', 'Hello, world!');
 
-// ./output/315f5bdb...5894edd3.txt
+// 315f5bdb...5894edd3.txt
 console.log(fileName);
 ```
 
